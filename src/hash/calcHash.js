@@ -3,7 +3,7 @@ import { createReadStream } from "node:fs";
 
 const calculateHash = async () => {
   const hash = createHash("sha256");
-  const stream = createReadStream("./files/fileToCalculateHashFor.txt");
+  const stream = createReadStream("src/hash/files/fileToCalculateHashFor.txt");
 
   stream.on("data", (chunk) => {
     hash.update(chunk);

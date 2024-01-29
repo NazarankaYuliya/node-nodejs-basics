@@ -2,8 +2,8 @@ import { copyFile, mkdir, readdir, access, constants } from "node:fs/promises";
 import { join } from "node:path";
 
 const copy = async () => {
-  const sourceDir = "files";
-  const targetDir = "files_copy";
+  const sourceDir = "src/fs/files";
+  const targetDir = "src/fs/files_copy";
 
   try {
     await access(sourceDir, constants.F_OK);

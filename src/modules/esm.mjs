@@ -4,8 +4,8 @@ import { readFile } from "node:fs/promises";
 import { fileURLToPath } from "url";
 import { createServer as createServerHttp } from "http";
 
-const fileA = await readFile("./files/a.json");
-const fileB = await readFile("./files/b.json");
+const fileA = await readFile("src/modules/files/a.json");
+const fileB = await readFile("src/modules/files/b.json");
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);

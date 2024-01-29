@@ -1,7 +1,7 @@
 import { readdir, access, constants } from "node:fs/promises";
 
 const list = async () => {
-  const folder = "files";
+  const folder = "src/fs/files";
   try {
     await access(folder, constants.F_OK);
 
